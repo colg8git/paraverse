@@ -70,6 +70,8 @@
     font-size: 20px;
     letter-spacing: 1.3px;
     gap: 5%;
+    border-radius: 5px;
+    transition: all 0.5s ease;
 }
 .linkedin-button {
     background: rgb(0,119,181);
@@ -87,6 +89,8 @@
     font-size: 20px;
     letter-spacing: 1.3px;
     gap: 5%;
+    border-radius: 5px;
+    transition: all 0.5s ease;
 }
 .linkedin-button img {
     width: 32px;
@@ -99,6 +103,10 @@
     width: 17px;
     height: 15px;
     margin-right: 5px;
+}
+.link-button:hover,
+.linkedin-button:hover {
+    transform: scale(1.1);
 }
 /*--------------------animations---------------------------------*/
 @keyframes astronaut {

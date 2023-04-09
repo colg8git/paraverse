@@ -165,6 +165,9 @@
     }
 }
 @media (max-width: 769px) {
+    .lands__section {
+        margin-bottom: 100px;
+    }
     .lands-title {
         font-size: 60px;
         line-height: 76px;

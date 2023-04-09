@@ -59,9 +59,7 @@
     align-items: center;
 }
 /*-----------------------------------------------------*/
-.discord-button {
-    background: rgb(88,101,242);
-    background: linear-gradient(90deg, rgba(88,101,242,1) 51%, rgba(144,88,240,1) 76%);
+.header-button {
     height: 50px;
     width: 140px;
     border: none;
@@ -76,23 +74,16 @@
     letter-spacing: 1.3px;
     transition: all 0.5s ease;
 }
+.discord-button {
+    background: rgb(88,101,242);
+    background: linear-gradient(90deg, rgba(88,101,242,1) 51%, rgba(144,88,240,1) 76%);
+    border-radius: 5px;
+}
 .twitter-button {
     background: rgb(29,155,240);
     background: linear-gradient(90deg, rgba(29,155,240,1) 55%, rgba(88,101,242,1) 89%);
-    height: 50px;
-    width: 140px;
-    border: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    z-index: 5;
-    color: white;
-    font-family: var(--primary-font);
-    font-size: 20px;
-    letter-spacing: 1.3px;
     gap: 5%;
-    transition: all 0.5s ease;
+    border-radius: 5px;
 }
 .twitter-button img {
     width: 18px;
@@ -107,7 +98,6 @@
 .discord-button:hover,
 .twitter-button:hover {
     transform: scale(1.1);
-    border-radius: 35px;
 }
 @media (max-width: 700px) {
     .buttons-container { 

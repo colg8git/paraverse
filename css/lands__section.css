@@ -159,6 +159,11 @@
     margin: 20px 0;
 }
 /*-----------------------------------------------------*/
+@media (max-width: 1024px) {
+    .lands__section {
+        margin-bottom: 50px;
+    }
+}
 @media (max-width: 769px) {
     .lands-title {
         font-size: 60px;

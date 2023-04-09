@@ -46,7 +46,7 @@
     .creators-discord-link,
     .creators-twitter-link {
         font-size: 16px;
-        line-height: 18px;
+        line-height: 26px;
         letter-spacing: 3px;
     }
     .footer {
@@ -61,4 +61,14 @@
     .footer-links-container {
         margin-top: -50px;
     }
+    .creators-links {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 321px) {
+    .creators-discord-link,
+    .creators-twitter-link {
+        line-height: 18px;
+    }
+
 }

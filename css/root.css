@@ -1,0 +1,14 @@
+@font-face {
+    font-family: roboto;
+    src: url('../fonts/Roboto/Roboto-Black.ttf');
+}
+@font-face {
+    font-family: rubik;
+    src: url('../fonts/Rubik_Pixels/RubikPixels-Regular.ttf');
+}
+:root {
+    --primary-font: roboto;
+    --secondary-font: rubik;
+    --primary-color: rgb(15, 20, 25);
+    --secondary-color: #5865f2;
+}

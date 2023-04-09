@@ -1,0 +1,94 @@
+/*--------------------animations---------------------------------*/
+@keyframes star {
+    0% {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+@keyframes planet {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 5px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+/*-----------------------------------------------------*/
+.stars-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.stars {
+    position: relative;
+    display: flex;
+}
+/*-----------------------------------------------------*/
+.planets {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    filter: brightness(0.7);
+}
+.mars {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 5%;
+    top: 50%;
+    pointer-events: none;
+    animation: planet 3s infinite;
+    transform: translate3d(0, 0, 0);
+}
+.moon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 40%;
+    top: 70%;
+    pointer-events: none;
+    animation: planet 3s infinite;
+    transform: translate3d(0, 0, 0);
+}
+.venus {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 50%;
+    top: 20%;
+    pointer-events: none;
+    animation: planet 3s infinite;
+    transform: translate3d(0, 0, 0);
+}
+.saturn {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 90%;
+    top: 60%;
+    pointer-events: none;
+    animation: planet 5s infinite;
+    transform: translate3d(0, 0, 0);
+}
+.jupiter {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 25%;
+    top: 80%;
+    pointer-events: none;
+    animation: planet 6s infinite;
+    transform: translate3d(0, 0, 0);
+}
+/*-----------------------------------------------------*/

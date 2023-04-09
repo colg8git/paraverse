@@ -1,0 +1,23 @@
+.circle-1 {
+    position: absolute;
+    left: 76.11%;
+    right: 0.28%;
+    top: 13.52%;
+    bottom: 10.2%;
+    background: #000099;
+    filter: blur(100px);
+    height: 210px;
+    width: 300px;
+    border-radius: 0px;
+}
+.circle-2 {
+    position: absolute;
+    left: 10%;
+    top: 40.52%;
+    background: #1DA1F2;
+    filter: blur(100px);
+    height: 210px;
+    width: 300px;
+    border-radius: 0px;
+    z-index: 0;
+}

@@ -1,0 +1,189 @@
+.team__section {
+    margin-top: 230px;
+    z-index: 9999;
+}
+.team__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 200;
+}
+.team-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+}
+.team-title {
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 100px;
+    line-height: 106px;
+    letter-spacing: 50px;
+    margin-bottom: 50px;
+}
+.team-text {
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 30px;
+    line-height: 46px;
+    letter-spacing: 10px;
+}
+.team-cards-container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+}
+.team-card {
+    height: 266px;
+    width: 270px;
+    border-radius: 34px;
+    border: solid 2px rgba(255, 255, 255, 0.3);
+    background: linear-gradient(97.12deg, rgba(255, 255, 255, 0.08) -3.52%, rgba(255, 255, 255, 0.07) 100.35%),
+                linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
+    transform: scale(1);
+    transition: all 0.4s ease-in-out;
+    margin-top: 60px;
+}
+.team-card:hover {
+    transform: scale(1.1);
+}
+.team-card-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.team-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #ffa800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.crew-name {
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+.team-card-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.crew-job {
+    color: rgba(255, 255, 255, 0.3);
+    font-family: var(--primary-font);
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3px;
+}
+.crew-socials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.crew-social {
+    height: 48px;
+    width: 90%;
+    border: solid 2px rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+}
+.crew-social:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+.crew-twitter a {
+    font-family: var(--primary-font);
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+.crew-twitter img {
+    width: 24px;
+    height: 22px;
+}
+/*-----------------------------------------------------*/
+@media (max-width:1025px) {
+    .team__section {
+        margin-top: -50px;
+    }
+}
+@media (max-width: 769px) {
+    .team__section {
+        margin-top: -100px;
+    }
+    .team-title {
+        font-size: 50px;
+        line-height: 66px;
+        letter-spacing: 20px;
+    }
+    .team-text {
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 4px;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 321px) {
+    .team-card {
+        height: 226px;
+        width: 230px;
+    }
+    .team-card-logo img{
+        width: 46px;
+        height: 46px;
+    }
+    .crew-name {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .crew-job {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 4px;
+    }
+    .crew-social {
+        width: 80%;
+        height: 40px;
+    }
+    .crew-twitter {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 2px;
+    }
+    .crew-twitter img {
+        width: 18px;
+        height: 16px;
+    }
+}

@@ -1,0 +1,342 @@
+.lands__section {
+    margin-top: 200px;
+    z-index: 200;
+}
+.lands__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.lands-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+}
+.lands-title {
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 100px;
+    line-height: 136px;
+    letter-spacing: 54px;
+    margin-left: clamp(0rem, -1.818rem + 9.09vw, 5rem);
+    box-sizing: border-box;
+    z-index: 100;
+}
+.lands-text {
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 5px;
+    max-width: 60%;
+    z-index: 100;
+}
+.lands-card:hover {
+    border: solid 2px rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+.card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px 0 15px 0;
+    gap: 10px;
+}
+.card-rarity {
+    height: 74px;
+    width: 74px;
+    border-radius: 55px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.card-rarity-1 {
+    background-color: #8a8b7f;
+}
+.card-rarity-2 {
+    background-color: #58a866;
+}
+.card-rarity-3 {
+    background-color: #81a3eb;
+}
+.card-rarity-4 {
+    background-color: #9f42d9;
+}
+.card-rarity-5 {
+    background-color: #f79d54;
+}
+.card-rarity img {
+    width: 60px;
+    height: 60px;
+    animation: rarity 2.5s infinite;
+    margin-left: 2.5px;
+}
+.card-rarity-4 img {
+    margin-left: 0;
+}
+.card-name {
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 24px;
+    line-height: 31px;
+    text-align: left;
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-description {
+    display: flex;
+    flex-direction: column;
+    max-height: 100px;
+    width: 100%;
+    gap: 10%;
+    z-index: 100;
+}
+.description {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-height: 90px;
+    gap: 10%;
+}
+.lands-card-3 .description,
+.lands-card-4 .description,
+.lands-card-5 .description{
+    overflow-x: hidden;
+}
+/*----------------------animations-------------------------------*/
+@keyframes rarity {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 5px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+/*-----------------------------------------------------*/
+.lands-cards-container {
+    display: flex;
+    position: relative;
+    width: 90vw;
+    gap: 5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    z-index: 100;
+}
+.lands-card {
+    box-sizing: border-box;
+    height: 336px;
+    width: 370px;
+    border-radius: 34px;
+    border: solid 2px rgba(255, 255, 255, 0.1);
+    padding: 0 25px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    transition: 0.5s;
+    position: relative;
+    margin: 20px 0;
+}
+/*-----------------------------------------------------*/
+@media (max-width: 769px) {
+    .lands-title {
+        font-size: 60px;
+        line-height: 76px;
+        letter-spacing: 30px;
+    }
+    .lands-text {
+        font-size: 24px;
+        line-height: 26px;
+        letter-spacing: 5px;
+        max-width: 100%;
+    }
+    .lands-cards-container {
+        width: 100vw;
+    }
+    .lands-card {
+        height: 336px;
+        width: 350px;
+        padding: 0 5px;
+        gap: 10px;
+        flex-direction: column;
+        transition: 0.5s;
+        position: relative;
+        margin: 20px 0;
+    }
+}
+/*-----------------------------------------------------*/
+.card-button {
+    position: absolute;
+    left: 6%;
+    top: 83%;
+    font-family: var(--primary-font);
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.popup-item {
+    position: absolute;
+    left: 0;
+    top: 120%;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2px;
+    color: black;
+    font-family: var(--primary-font);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: 1000;
+}
+.uncommon-item {
+    width: 110%;
+}
+.card-button:hover .popup-item,
+.popup-item:hover {
+    opacity: 1;
+    transform: translate(0, -15%);
+    visibility: visible;
+    pointer-events: all;
+    transition: all 0.5s ease-in-out;
+}
+.card-button:hover .card-arrow,
+.popup-item:hover .card-arrow{
+    transform: rotate(-180deg);
+}
+.card-arrow {
+    width: 16px;
+    height: 16px;
+    transition: 0.3s;
+}
+/*-----------------------------------------------------*/
+@media (max-width: 1025px) {
+    .lands__section {
+        margin-top: -100px;
+    }
+}
+@media (max-width: 470px) {
+    .lands-card {
+        width: 270px;
+        height: 250px;
+        padding: 0 16px;
+      }
+      .card-rarity {
+        width: 54px;
+        height: 54px;
+      }
+      .card-rarity img {
+        width: 40px;
+        height: 40px;
+      }
+      .card-name {
+        font-size: 22px;
+        line-height: 26px;
+      }
+      .description {
+        font-size: 16px;
+        line-height: 20px;
+        max-height: 70px;
+      }
+      .card-button {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      .card-arrow {
+        width: 16px;
+        height: 16px;
+      }
+      .popup-item {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+      }
+      .uncommon-item {
+        width: 120%;
+      }
+}
+@media (max-width: 769px) {
+    .lands__section {
+        margin-top: 50px;
+    }
+    .lands-cards-container {
+        margin-top: 15px;
+    }
+}
+@media (max-width: 320px) {
+    .lands__section {
+        margin-top: -70px;
+    }
+    .lands-card {
+        width: 250px;
+        height: 230px;
+        padding: 0 20px;
+    }
+    .card-rarity {
+        width: 48px;
+        height: 48px;
+    }
+    .card-rarity img {
+        width: 32px;
+        height: 32px;
+    }
+    .card-name {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .description {
+        font-size: 12px;
+        line-height: 14px;
+        max-height: 50px;
+    }
+    .card-button {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .card-arrow {
+        width: 8px;
+        height: 8px;
+    }
+    .popup-item {
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+    }
+    .uncommon-item {
+        width: 120%;
+    }
+}

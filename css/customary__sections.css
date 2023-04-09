@@ -48,6 +48,7 @@
     letter-spacing: 1.3px;
     gap: 5%;
     border-radius: 5px;
+    transition: all 0.5s ease;
 }
 .customary-button:hover {
     transform: scale(1.1);

@@ -69,7 +69,7 @@ h1, span, a, p {
 button {
   cursor: pointer;
 }
-::selection {
+*::selection {
   cursor: text;
 }
 /*-----------------------------------------------------*/

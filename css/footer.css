@@ -28,6 +28,20 @@
     letter-spacing: 6px;
     display: inline-block;
 }
+.creators-twitter-link {
+    display: inline-block;
+}
+.creators-twitter-link:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #0883a4;
+  transform: translateX(-100%);
+}
+.creators-twitter-link:hover:before {
+  transform: translateX(0);
+}
 @media (max-width:1025px) {
     .footer {
         margin-top: 50px;
